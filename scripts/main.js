@@ -8,6 +8,6 @@ import {
 } from "@minecraft/server";
 import { transferPlayer } from "@minecraft/server-admin";
 world.afterEvents.playerSpawn.subscribe((event) => {
-transferPlayer(event.player, { hostname: "", port: 19132 }); // Enter server IP here, example: "play.crabsmp.net"
+transferPlayer(event.player, { hostname: "your.server.ip", port: 19132 }); // Enter server IP here, example: "play.crabsmp.net"
 });
 
